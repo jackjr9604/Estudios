@@ -1,4 +1,4 @@
-para actualizar repositorio locar por git de github
+//para actualizar repositorio locar por git de github
 
 git pull
 
@@ -15,6 +15,7 @@ con git log // miramos lo q se a cargado nuevo
     // estos cambios estan en la rama creada, toca subir los cambios a github
 
     git push origin "nombre de la rama"
+    
 
 // para empujar codigo existente a un repositorio en Git hub
 
@@ -24,3 +25,8 @@ git commit -m "mensaje para github"// para generar cambios sobre la version anti
 
 git remote -v
 git push// envia cambios al repositorio remoto
+
+
+// CLONAR REPOSITORIO DE HUB A LOCAL
+git clone (enlace copiado del repositorio)
+
