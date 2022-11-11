@@ -86,4 +86,59 @@ lista//['primer', 'segundo', 3]
 
 lista[10] = 10//va a aparcer los elementos asignados y va  adecir q los otros no han sido asignados(undefined)
 
+//PUSH Y POPS
 
+//creo un arrego
+
+var lista = []
+
+//.push es una funcion que  agrega un item a la ultima posicion del arreglo
+
+lista.push(1)///[1]
+
+lista.push(2)//[1, 2]
+
+lista.push('lina')//[1, 2, 'lina']
+
+//.pop es una funcion que quita el ultimo Item y lo devuelve
+
+var str = lista.pop();//crea la variable con el valor quitado
+
+str//'toni'
+
+lista//[1, 2]
+
+lista.pop()//2 (asi se elimina el utimo item)
+
+lista//[1]
+
+// COMO RECORRER UN ARREGLO?
+
+var lista = [1, 2, 3, 4, 5];
+             0  1  2  3  4
+for(var i = 0; i < lista.length; i++) {
+    console.log(lista[i]);
+}//1
+ //2
+ //3
+ //4
+ //5
+
+ var lista = [1, 2, 3, 4, 5, 6, 7, 9, 10, 'toni', 'mati', 'chao']:
+//mientras lista.length sea mayor que 0 se va a devolver lista.pop
+ while (lista.length > 0) {
+    console.log(lista.pop());
+ }//'chao'
+  //'mati'
+  //'toni'
+  //10
+  //9
+  //7
+  //6
+  //5
+  //4
+  //3
+  //2
+  //1
+
+  lista//[]
