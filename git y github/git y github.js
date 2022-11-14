@@ -30,3 +30,13 @@ git push// envia cambios al repositorio remoto
 // CLONAR REPOSITORIO DE HUB A LOCAL
 git clone (enlace copiado del repositorio)
 
+// SUBIR CARPETA LOCAL A NUEVO REPOSITORIO
+
+echo "# NOMBRE EN EL README" >> README.md
+git init
+git add README.md
+git commit -m "MENSAJE"
+git branch -M main
+git remote add origin https://github.com/URL DEL REPOSITORIO
+git push -u origin main
+
