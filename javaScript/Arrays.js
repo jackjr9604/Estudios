@@ -196,4 +196,11 @@ El método reduce()aplica una función a un acumulador y a cada valor de un
 array (de izquierda a derecha) para reducirlo a un único valor.
 */
 
+//**
+El método map() crea un nuevo array con los resultados de la llamada a 
+la función indicada aplicados a cada uno de sus elementos.
+*/
+
+
+
 
