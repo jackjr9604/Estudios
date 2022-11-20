@@ -38,7 +38,7 @@ arrayFuncion[0] * 3//3(multiplica 3 por el numero 0 del array siendun un numero)
 
 arrayFuncion[1] + 'gafa'//tonigafa
 
-arrayFuncion[7]//[1, 2, 3, 4, 5]
+arrayFuncion[6]//[1, 2, 3, 4, 5]
 
 arrayFuncion[6][4]//5
 
@@ -142,3 +142,15 @@ for(var i = 0; i < lista.length; i++) {
   //1
 
   lista//[]
+
+ //El método Array.map() se utiliza comúnmente para aplicar algunos cambios a los elementos, 
+  //ya sea multiplicando por un número específico como en el código anterior, o haciendo cualquier 
+  //otra operación que pueda necesitar para su aplicación.
+
+  let arr = [3, 4, 5, 6];
+
+let modifiedArr = arr.map(function(element){
+    return element *3;
+});
+
+console.log(modifiedArr); // [9, 12, 15, 18]
