@@ -1,27 +1,27 @@
 ARREGLOS O ARRAYS
 
-// los arrays son una lista de elemntos y se definen con corchetes o braquets []
+//! los arrays son una lista de elemntos y se definen con corchetes o braquets []
 
 var arreglo = [1, 2, 3, 4, 5];
 
 
-//pueden aceptar todos tipos de datos
+//! pueden aceptar todos tipos de datos
 
 var otroArreglo = [1, 2, 'hola', null, undefined];
 
-//inclusive pueden tenr un elemento que sea un arreglo
+//! inclusive pueden tenr un elemento que sea un arreglo
 
 var arregloAdentro = [1, 2, 'chao', [2, 3, 'hola']];
 
 
-//arreglo vacio
+//! arreglo vacio
 var arreglo = [];
 
 // puede tener incluso una funcion
 
 var arrayFuncion = [1, 'toni', null,, function() { console.log('hola')}, 2, ]
 
- // para acceder a los arreglos
+ //! para acceder a los arreglos
 
  var array =['toni', 'emi', 'franco', 'jmmy'];
                 0      1       2         3
@@ -66,7 +66,7 @@ var i = 2;
 
 arrayFuncion[i]//null
 
-// para agregar elementos a los arrays
+//! para agregar elementos a los arrays
 
 var lista = [];// creo un array vacio
 
@@ -86,13 +86,13 @@ lista//['primer', 'segundo', 3]
 
 lista[10] = 10//va a aparcer los elementos asignados y va  adecir q los otros no han sido asignados(undefined)
 
-//PUSH Y POPS
+//! PUSH Y POPS
 
 //creo un arrego
 
 var lista = []
 
-//.push es una funcion que  agrega un item a la ultima posicion del arreglo
+//! .push es una funcion que  agrega un item a la ultima posicion del arreglo
 
 lista.push(1)///[1]
 
@@ -100,7 +100,7 @@ lista.push(2)//[1, 2]
 
 lista.push('lina')//[1, 2, 'lina']
 
-//.pop es una funcion que quita el ultimo Item y lo devuelve
+//! .pop es una funcion que quita el ultimo Item y lo devuelve
 
 var str = lista.pop();//crea la variable con el valor quitado
 
@@ -112,7 +112,7 @@ lista.pop()//2 (asi se elimina el utimo item)
 
 lista//[1]
 
-// COMO RECORRER UN ARREGLO?
+// ! COMO RECORRER UN ARREGLO?
 
 var lista = [1, 2, 3, 4, 5];
              0  1  2  3  4
@@ -143,6 +143,7 @@ for(var i = 0; i < lista.length; i++) {
 
   lista//[]
 
+<<<<<<< HEAD
  //El método Array.map() se utiliza comúnmente para aplicar algunos cambios a los elementos, 
   //ya sea multiplicando por un número específico como en el código anterior, o haciendo cualquier 
   //otra operación que pueda necesitar para su aplicación.
@@ -154,3 +155,66 @@ let modifiedArr = arr.map(function(element){
 });
 
 console.log(modifiedArr); // [9, 12, 15, 18]
+=======
+// ! Acceder a un elemento de Array mediante su índice
+
+let primero = frutas[0]
+// Manzana
+
+let ultimo = frutas[frutas.length - 1]
+// Banana
+
+// ! Recorrer un Array
+
+frutas.forEach(function(elemento, indice, array) {
+    console.log(elemento, indice);
+})
+// Manzana 0
+// Banana 1
+
+//! Añadir un elemento al principio de un Array
+
+let nuevaLongitud = frutas.unshift('Fresa') // Añade "Fresa" al inicio
+// ["Fresa" ,"Manzana", "Banana"]
+
+//! Eliminar el primer elemento de un Array
+
+let primero = frutas.shift() // Elimina "Fresa" del inicio
+// ["Manzana", "Banana"]
+
+//! Encontrar el índice de un elemento del Array
+
+frutas.push('Fresa')
+// ["Manzana", "Banana", "Fresa"]
+
+let pos = frutas.indexOf('Banana') // (pos) es la posición para abreviar
+// 1
+
+//** ncludes()
+El método includes() determina si un array incluye un determinado elemento, 
+devuelve true o false según corresponda. Utiliza el algoritmo sameValueZero para determinar 
+si se encuentra el elemento dado.
+*/
+
+const arr = [1, 2, 3 ];
+console.log(arr.includes(2));//true
+
+const pets = ['cat', 'dog', 'bat'];
+console.log(pets.includes('cat'));//true
+console.log(pets.includes('at'));//false
+
+//**
+reduce()
+El método reduce()aplica una función a un acumulador y a cada valor de un 
+array (de izquierda a derecha) para reducirlo a un único valor.
+*/
+
+//**
+El método map() crea un nuevo array con los resultados de la llamada a 
+la función indicada aplicados a cada uno de sus elementos.
+*/
+
+
+
+
+>>>>>>> 568884d9bce0b961e051564464f6ba24649dab11
